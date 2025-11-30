@@ -46,7 +46,7 @@ class ContactUsView(View):
             return HttpResponseRedirect(reverse('index') + '?message=فرم+شما+با+موفقیت+ارسال+شد!')
         else:
 
-             return HttpResponseRedirect(reverse('index') + '?message=خطا+در+ارسال+فرم')
+             return HttpResponseRedirect(reverse('index') + '?message=خطا در ارسال فرم یا داده هایی که وارد کردین اشتباه هست')
 
 
 
