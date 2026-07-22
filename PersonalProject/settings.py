@@ -153,4 +153,3 @@ EMAIL_HOST_PASSWORD = 'your_email_password'
 # ایمیل برای دریافت پیام‌ها
 CONTACT_EMAIL = 'your_contact_email@example.com'
 
-

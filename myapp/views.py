@@ -2,8 +2,13 @@ from django.shortcuts import render , redirect , reverse
 from django.contrib import messages
 from django.views import View
 from django.http import HttpResponseRedirect
+from django.contrib.auth import login
+from django.contrib.auth.decorators import login_required
+from django.shortcuts import redirect, render
 
-from .forms import ContactUsForm
+
+
+from .forms import ContactUsForm , SignUpForm
 
 
 from .models import NewsDatabase
@@ -11,21 +16,12 @@ from .models import NewsDatabase
 # Create your views here.
 
 
-
+#My index Page
 def index(request):
     news = NewsDatabase.objects.all()
     return  render(request , 'myapp/index.html' , context={'news':news} )
 
 
-
-
-def index_dark(request):
-    return render(request , 'myapp/index-dark.html' )
-
-
-
-def intro(request):
-    return render(request , 'myapp/intro.html' )
 
 
 
@@ -42,12 +38,9 @@ class ContactUsView(View):
         form = ContactUsForm(request.POST)
         if form.is_valid():
             form.save()
-            # ارسال پیغام به URL به صورت query parameter
             return HttpResponseRedirect(reverse('index') + '?message=فرم+شما+با+موفقیت+ارسال+شد!')
         else:
 
              return HttpResponseRedirect(reverse('index') + '?message=خطا در ارسال فرم یا داده هایی که وارد کردین اشتباه هست')
-
-
 
 

@@ -2,6 +2,9 @@ from django import forms
 from django.core.exceptions import ValidationError
 from django.core.validators import EmailValidator
 from django.core.exceptions import ValidationError
+from django.contrib.auth import get_user_model
+from django.contrib.auth.forms import UserCreationForm
+
 
 from .models import ContactUs
 
@@ -42,3 +45,32 @@ class ContactUsForm(forms.ModelForm):
         if len(message) < 10:
             raise ValidationError("پیام باید حداقل 10 کاراکتر داشته باشد.")
         return message
+
+
+
+
+
+
+User = get_user_model()
+
+
+class SignUpForm(UserCreationForm):
+    email = forms.EmailField(
+        required=True,
+        label="Email",
+        widget=forms.EmailInput(
+            attrs={
+                "placeholder": "example@email.com",
+                "autocomplete": "email",
+            }
+        ),
+    )
+
+    class Meta(UserCreationForm.Meta):
+        model = User
+        fields = (
+            "username",
+            "email",
+            "password1",
+            "password2",
+        )
