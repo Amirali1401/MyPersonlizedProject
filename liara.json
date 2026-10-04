@@ -1,0 +1,6 @@
+{
+  "platform": "docker",
+  "app": "amiraliproject",
+  "port": 8000
+}
+
