@@ -1,49 +1,49 @@
-# MyPersonalizedProject
+# وب‌سایت شخصی امیرعلی فهیمی‌نسب
 
-A Django-based web application designed with a clean project structure, environment-based settings, static/media separation, and deployment readiness.
+وب‌سایت شخصی و رزومه آنلاین امیرعلی فهیمی‌نسب، توسعه‌دهنده وب با تمرکز بر Python و Django. این وب‌سایت برای معرفی سوابق، مهارت‌ها، تحصیلات، علایق و راه‌های ارتباطی طراحی شده است.
 
-This project was developed with a focus on maintainability, local development workflow, testing, and production deployment best practices.
+## 🌐 نسخه آنلاین
 
----
+[مشاهده وب‌سایت شخصی](https://amiralifahimi.ir/)
 
-## Features
+## 📌 درباره وب‌سایت
 
-- Django project with a custom project/app structure
-- Environment-based configuration using `.env`
-- Separated development and production settings logic
-- Static files management with `collectstatic`
-- Media files support for user uploads
-- Responsive templates with static assets
-- Root URL configured for the homepage
-- Automated Django tests for core views
-- Production-oriented deployment preparation
+این وب‌سایت بستری برای معرفی حرفه‌ای و نمایش اطلاعات مرتبط با سوابق کاری و فنی من است. بازدیدکنندگان می‌توانند با زمینه‌های کاری، مهارت‌ها، تحصیلات و راه‌های تماس من آشنا شوند.
 
----
+## ✨ بخش‌های وب‌سایت
 
-## Tech Stack
+- معرفی کوتاه و اطلاعات حرفه‌ای
+- نمایش مهارت‌ها و فناوری‌های مورد استفاده
+- سوابق تحصیلی و تجربه
+- معرفی علایق و زمینه‌های پژوهشی
+- بخش نمونه‌کارها
+- بخش اخبار
+- اطلاعات تماس
+
+## 🛠️ فناوری‌ها
 
 - Python
 - Django
-- python-dotenv
-- SQLite (local development)
-- PostgreSQL (production)
-- Gunicorn
-- Nginx
 - HTML
 - CSS
 - JavaScript
 
----
+> این فهرست بر اساس اطلاعات معرفی‌شده در وب‌سایت نوشته شده است. برای دقیق‌تر کردن آن، فناوری‌های استفاده‌شده در کد پروژه را نیز بررسی و در صورت نیاز اضافه کنید.
 
-## Project Structure
-```text
-MyPersonalizedProject/
-├── PersonalProject/        # Django project configuration
-├── myapp/                  # Main application
-├── static/                 # Source static assets
-├── templates/              # Shared templates
-├── media/                  # Uploaded media files (not tracked in Git)
-├── manage.py
-├── requirements.txt
-├── .env.example
-└── README.md
+## 🚀 مشاهده وب‌سایت
+
+برای مشاهده نسخه آنلاین، به نشانی زیر بروید:
+
+<https://amiralifahimi.ir/>
+
+## 🧑‍💻 توسعه‌دهنده
+
+**امیرعلی فهیمی‌نسب**  
+توسعه‌دهنده وب با علاقه‌مندی به Python، Django، یادگیری ماشین و توسعه نرم‌افزار.
+
+- وب‌سایت: [amiralifahimi.ir](https://amiralifahimi.ir/)
+- ایمیل: [amirali.fahimi99@gmail.com](mailto:amirali.fahimi99@gmail.com)
+
+## 📄 مجوز
+
+در صورت انتشار پروژه با مجوز مشخص، اطلاعات آن را در این بخش درج کنید.
